@@ -1,0 +1,175 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+}
+
+/* Estilos para el contenedor de los controles */
+.controls-container {
+  margin-top: 50px;
+  position: fixed;
+  left: 50%;
+}
+
+/* Estilos para ocultar el contenedor */
+.controls-container.hidden {
+  display: none;
+}
+
+/* Estilos para el rectángulo semi-transparente en el menú principal */
+.controls-background {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.6); /* Color de fondo semitransparente */
+  border-radius: 15px;
+  z-index: -1; /* Colocar detrás de los controles */
+}
+
+/* Estilos para la imagen de los controles */
+.controls img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+#darkBackground {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar */
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+
+  border-radius: 5px;
+  z-index: -1; /* Colocar detrás del menú */
+}
+
+.main {
+  font-family: 'Courier New', Courier, monospace;
+  color: azure;
+}
+
+.main h1 {
+  color:orange
+  
+}
+canvas {
+    padding: 0 0 0 0;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  #menu {
+    text-align: center;
+    margin-top: 100px;
+  }
+  #menu button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+/* Estilos para el marcador */
+.score {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  width: 150px;
+  text-align: center;
+  background-color: #e6e6e6cb;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#scoreContainer {
+  display: flex;
+  justify-content: space-around; /* Espacio entre los marcadores */
+  width: 350px; /* Ancho total de los marcadores */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+
+/* Agrega estilos para el menú que se mostrará al pasar el mouse */
+#mouseMenu {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0); /* Color de fondo semi-transparente */
+  /* Estilos adicionales para el menú emergente */
+  /* ... */
+}
+
+.main button {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  /* Agrega más estilos según sea necesario */
+}
+
+.main button:hover {
+  background-color: green;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  /* Agrega más estilos según sea necesario */
+}
+
+/* Estilos para los botones del menú emergente */
+#canvasMenu button {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 10px;
+  /* Agrega más estilos según sea necesario */
+}
+
+/* Estilo específico para el botón de reiniciar juego */
+#restartGame:hover {
+  background-color: green;
+  /* Otros estilos para el botón de reiniciar juego */
+}
+
+/* Estilo específico para el botón de volver al menú */
+#returnToMenu:hover {
+  background-color: orange;
+  /* Otros estilos para el botón de volver al menú */
+}

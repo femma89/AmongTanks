@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmongTanks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class='main' id="menu">
+    <h1>AmongTanks</h1>
+    <h2>Seleccione modo de juego:</h2>
+    <button id="versusAI">Versus IA</button>
+    <button id="versusLocal">Versus Local</button>
+  </div>
+  <div class="background">
+    <img src="Sources/backgroundGame.png" alt="background">
+  </div>
+
+  <div class="controls-container"> <!-- Agregamos la clase 'hidden' para ocultar inicialmente -->
+    <div class="controls-background"></div> <!-- Fondo oscuro -->
+    <div class="controls">
+      <img src="Sources/controles2.png" alt="controls">
+    </div>
+  </div>
+  <!-- Menú emergente para el canvas -->
+  <div id="canvasMenu" style="display: none; position: absolute; z-index: 10;">
+    <div id="darkBackground"></div> <!-- Capa de fondo oscuro -->
+    <!-- Contenido del menú para el canvas -->
+    <button id="restartGame">Reiniciar Juego</button>
+    <button id="returnToMenu">Volver al Menú</button>
+  </div>
+
+    <canvas id="gameCanvas" width="640" height="480" style="display: none;"></canvas>
+    <div id="scoreboard" style="display: none;">
+      <div id="scoreContainer">
+        <p id="player1Score" class="score">Player 1: 0</p>
+        <p id="player2Score" class="score">Player 2: 0</p>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
